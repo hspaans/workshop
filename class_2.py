@@ -5,6 +5,3 @@ class Greeter:
     def greet(self):
         print('Hello '+ self.greet_what)
         
-
-world = Greeter()
-me = Greeter('René')
