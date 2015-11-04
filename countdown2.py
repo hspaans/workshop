@@ -16,8 +16,3 @@ class Countdown:
         while n <= self.start:
             yield n
             n += 1
-
-        
-
-        
-            

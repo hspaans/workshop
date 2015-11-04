@@ -3,5 +3,5 @@ class Greeter:
         self.greet_what = greet_what
 
     def greet(self):
-        print('Hello '+ self.greet_what)
-        
+        print('Hello ' + self.greet_what)
+

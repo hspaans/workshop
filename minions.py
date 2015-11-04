@@ -31,5 +31,3 @@ class Minion:
         """ Prints the current population """
         print('We have {:d} minions'.format(cls.population))
 
-
-        

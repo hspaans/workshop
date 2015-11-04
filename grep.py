@@ -3,7 +3,7 @@ def grep(what, filename):
     while True:
         line = f.readline()
         if len(line) == 0:
-            break;
+            break
         
         if what in line:
             print(line)

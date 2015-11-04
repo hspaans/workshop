@@ -17,6 +17,7 @@ class SchoolMember:
         """ Tell My details """
         print('Name: "{}" Age: "{}"'.format(self.name, self.age))
 
+
 class Teacher(SchoolMember):
     """ Represents a teacher """
     def __init__(self, name, age, salary):
@@ -27,6 +28,7 @@ class Teacher(SchoolMember):
     def tell(self):
         SchoolMember.tell(self)
         print('Salary: "{:d}"'.format(self.salary))
+
 
 class Student(SchoolMember):
     """ Represents a student """

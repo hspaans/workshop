@@ -5,5 +5,4 @@ def countdown(n):
         yield n
         n -= 1
     print('{:d} Blast off!'.format(n))
-    
-    
+

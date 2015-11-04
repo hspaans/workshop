@@ -38,6 +38,3 @@ class Minion:
     def how_many(cls):
         """ Prints the current population """
         print('We have {:d} minions'.format(cls.population))
-
-
-        

@@ -5,11 +5,12 @@ import math
 DEGREES = 360
 sine_table = []
 
+
 def init_table():
     """ Initialize table from math.sin by step of 1 degree [0:90] """
     for i in range(0, int((DEGREES / 4) + 1)):
         sine_table.append(math.sin(2 * math.pi * i / DEGREES))
-	
+
 
 def sin(i):
     """ Look up sine of degree i in table """
@@ -69,7 +70,7 @@ def atan(i):
     """
     val = asin(i / math.sqrt(i*i + 1))
     if abs(val) == 90:
-        return copysign(val - 1, val)
+        return math.copysign(val - 1, val)
     else:
         return val
 
@@ -80,7 +81,7 @@ def print_table():
     print('angle:      sine         cosine         tangent')
     for angle in range(0, 360 + 1):
         print('{:5d}: {: 1.10f} {: 1.10f} {:14.10f}'.
-              format(angle,sin(angle),cos(angle),tan(angle)))
+              format(angle, sin(angle), cos(angle), tan(angle)))
         
 
 init_table()
